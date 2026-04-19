@@ -27,15 +27,13 @@ in
     };
   };
 
+  # Required when using Determinate Nix installer
+  nix.enable = false;
+
   networking = {
     computerName = "Tests MacBook Air";
     hostName = "Tests-MacBook-Air";
     localHostName = "Tests-MacBook-Air";
-  };
-
-  nix.settings = {
-    cores = 4;
-    max-jobs = 2;
   };
 
   users.users.${cfg.name} = {
