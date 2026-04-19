@@ -20,18 +20,21 @@ in
 
     suites = {
       common = enabled;
+      development = {
+        enable = true;
+        dockerEnable = false;
+      };
     };
 
     tools = {
       homebrew.enable = false;
     };
-        # Disable the nix module that conflicts with Determinate
+
     nix = {
-      enable = false;          # ← ADD THIS
+      enable = false;
     };
   };
 
-  # Required when using Determinate Nix installer
   nix.enable = false;
 
   networking = {
