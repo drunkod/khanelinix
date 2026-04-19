@@ -9,6 +9,10 @@ let
 in
 {
   khanelinix = {
+    user = {
+      enable = true;
+      name = "test";     # ← ADD THIS
+    };
     security = {
       sudo = enabled;
       sops.enable = false;
