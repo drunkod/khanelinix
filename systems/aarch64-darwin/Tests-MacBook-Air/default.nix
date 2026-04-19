@@ -25,6 +25,10 @@ in
     tools = {
       homebrew.enable = false;
     };
+        # Disable the nix module that conflicts with Determinate
+    nix = {
+      enable = false;          # ← ADD THIS
+    };
   };
 
   # Required when using Determinate Nix installer
