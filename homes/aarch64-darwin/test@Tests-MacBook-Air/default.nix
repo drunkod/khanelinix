@@ -31,6 +31,10 @@ in
           tmux = enabled;
         };
       };
+
+      graphical = {
+        apps.zed = enabled;
+      };
     };
 
     theme.catppuccin = enabled;
